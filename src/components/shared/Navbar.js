@@ -121,7 +121,7 @@ const Navbar = () => {
       </div>
 
       <div className=" lg:hidden text-black w-full overflow-hidden border-b-[1px] border-neutral-300  ">
-        <div className="btm-nav w-full z-40 py-0 my-0 h-12 bg-bodydark1">
+        <div className="btm-nav w-full z-40 py-0 my-0 h-12 bg-bodydark1 mx-2">
           <button className="py-0 my-0">
             <Link
               href="/"
