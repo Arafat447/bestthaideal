@@ -7,7 +7,7 @@ const TopServiceCard = (props) => {
   return (
     <div>
       <div
-        className="hero  w-96 lg:w-96 card       bg-cover bg-center   "
+        className="hero   lg:w-96 card       bg-cover bg-center   "
         style={{
           backgroundImage: `url(${bgImage.src})`,
         }}

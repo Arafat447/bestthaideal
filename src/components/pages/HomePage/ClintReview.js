@@ -56,7 +56,7 @@ const ClintReview = () => {
       <div className="z-1  relative py-12">
         <Swiper
           loop={true}
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={10}
           autoplay={{
             delay: 8500, // Change slide every 2.5 seconds

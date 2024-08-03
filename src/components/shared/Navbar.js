@@ -58,7 +58,7 @@ const Navbar = () => {
 
                 <Link
                   href="tel:+8801711542636"
-                  className="bg-brandColor text-white ml-4 btn-sm rounded-full btn "
+                  className="bg-brandColor whitespace-nowrap mr-1 text-white ml-4 btn-sm rounded-full btn "
                 >
                   <li>+66(0)9 69 136 137</li>
                 </Link>

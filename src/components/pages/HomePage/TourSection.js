@@ -59,15 +59,15 @@ const TourSection = () => {
   ];
 
   return (
-    <div className="pb-18  container mx-auto text-black">
+    <div className="lg:pb-18  container mx-auto text-black">
       <h2 className="text-2xl  font-bold text-center lg:text-left">
         Tourism (palace)
       </h2>
 
-      <div className="z-1  relative py-12 ">
+      <div className="z-1  relative py-12 px-4 lg:px-1 ">
         <Swiper
           loop={true}
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={10}
           autoplay={{
             delay: 8500, // Change slide every 2.5 seconds

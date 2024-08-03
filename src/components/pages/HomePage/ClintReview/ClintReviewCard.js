@@ -7,7 +7,7 @@ const ClintReviewCard = (props) => {
     <div>
       <div className=" w-full    text-neutral-content text-center   h-46 bg-bodydark1 p-4 rounded-xl  ">
         <div className=" w-full flex flex-col justify-start items-center px-4">
-          <h2 className=" pt-5 text-left text-black    font-bold text-xl">
+          <h2 className=" lg:pt-5 text-left text-black    font-bold lg:text-xl">
             {LargeText}
           </h2>
           <div className="flex items-center space-x-2  text-brandColor">
@@ -20,8 +20,8 @@ const ClintReviewCard = (props) => {
             </svg>
             <span className="text-sm font-bold">{rating}</span>
           </div>
-          <p className=" text-left text-black   text-sm  ">
-            {space} <span className="text-xs">(Best thai deal) </span>
+          <p className=" text-left text-black     ">
+            {space} <span className="text-xs ">(Best thai deal) </span>
           </p>
           <p className=" text-left text-black   text-sm py-4">{Subtext}</p>
         </div>

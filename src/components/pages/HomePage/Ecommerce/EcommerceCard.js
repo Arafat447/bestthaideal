@@ -20,7 +20,7 @@ const EcommerceCard = (props) => {
               {LargeText}
             </h2>
             <div className="flex pt-4 ">
-              <p className="bg-brandColor   border-none text-white    rounded-full  px-3 py-2   ">
+              <p className="bg-brandColor   border-none text-white    rounded-full  px-1  py-1 lg:px-3 lg:py-2   ">
                 Today&apos;s Hot Deal
               </p>
             </div>

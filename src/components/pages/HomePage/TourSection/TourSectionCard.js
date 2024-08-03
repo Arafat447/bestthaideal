@@ -8,7 +8,7 @@ const TourSectionCard = (props) => {
     <div>
       <Link href="/">
         <div
-          className="hero w-52 card h-64  bg-cover bg-center cursor-pointer   "
+          className="hero lg:w-52 card h-64  bg-cover bg-center cursor-pointer   "
           style={{
             backgroundImage: `url(${bgImage.src})`,
           }}
