@@ -1,80 +1,105 @@
-import Image from "next/image";
+"use client";
 import React from "react";
-import image1 from "@/app/asset/image/largeImage/imagture.webp";
-import image2 from "@/app/asset/image/largeImage/beach.png.webp";
-import ButtonPrimary from "@/components/shared/ButtonPrimary";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./style.css";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import TourSectionCard from "./TourSection/TourSectionCard";
+import heroImage1 from "@/app/asset/image/largeImage/imagture.webp";
+import placeImage1 from "@/app/asset/image/placeImage/p1.png";
+import placeImage2 from "@/app/asset/image/placeImage/p2.png";
+import placeImage3 from "@/app/asset/image/placeImage/p3.png";
+import placeImage4 from "@/app/asset/image/placeImage/p4.png";
+import placeImage5 from "@/app/asset/image/placeImage/p5.png";
+import placeImage6 from "@/app/asset/image/placeImage/p6.png";
+import placeImage7 from "@/app/asset/image/placeImage/p7.png";
+import placeImage8 from "@/app/asset/image/placeImage/p8.png";
+
 const TourSection = () => {
+  const slides = [
+    {
+      LargeText: "Thai",
+      bgImage: heroImage1,
+    },
+    {
+      LargeText: "Abu dubai ",
+      bgImage: placeImage1,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage2,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage3,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage4,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage5,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage6,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage7,
+    },
+    {
+      LargeText: "Singapore",
+      bgImage: placeImage8,
+    },
+  ];
+
   return (
-    <section class="text-gray-600 body-font text-black container mx-auto px-4 lg:px-0">
-      <div class="    py-8 mx-auto flex flex-wrap">
-        <div class="flex flex-col lg:flex-row  w-full gap-4    ">
-          <div class="  lg:w-1/2 md:w-full w-full">
-            <div class="flex   rounded-lg border-gray-200 border-opacity-50   sm:flex-row flex-col">
-              <div class="flex-grow">
-                <div className="rounded-xl">
-                  <div
-                    className="hero min-h-100 w-full bg-cover bg-center rounded-xl"
-                    style={{
-                      backgroundImage: `url(${image1.src})`,
-                    }}
-                  >
-                    <div className="rounded-xl hero-overlay bg-opacity-75 hover:bg-opacity-60 transition duration-500"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                      <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">
-                          Local Tourism
-                        </h1>
-                        <p className="mb-5">
-                          Provident cupiditate voluptatem et in. Quaerat fugiat
-                          ut assumenda excepturi exercitationem quasi. In
-                          deleniti eaque aut repudiandae et a id nisi.
-                        </p>
-                        <ButtonPrimary
-                          sideLink="http://tours.bestthaideal.com/"
-                          text="Explore Now"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          <div class="  lg:w-1/2 md:w-full">
-            <div class="flex   rounded-lg border-gray-200 border-opacity-50   sm:flex-row flex-col">
-              <div class="flex-grow">
-                <div className="rounded-xl">
-                  <div
-                    className="hero min-h-100 w-full bg-cover bg-center rounded-xl"
-                    style={{
-                      backgroundImage: `url(${image2.src})`,
-                    }}
-                  >
-                    <div className="rounded-xl hero-overlay bg-opacity-75 hover:bg-opacity-60 transition duration-500"></div>
-                    <div className="hero-content text-neutral-content text-center">
-                      <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">
-                          Global Tourism
-                        </h1>
-                        <p className="mb-5">
-                          Provident cupiditate voluptatem et in. Quaerat fugiat
-                          ut assumenda excepturi exercitationem quasi. In
-                          deleniti eaque aut repudiandae et a id nisi.
-                        </p>
-                        <ButtonPrimary
-                          sideLink="http://tours.bestthaideal.com/"
-                          text="Explore Now"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="pb-18  container mx-auto text-black">
+      <h2 className="text-2xl  font-bold text-center lg:text-left">
+        Tourism (palace)
+      </h2>
+
+      <div className="z-1  relative py-12 ">
+        <Swiper
+          loop={true}
+          slidesPerView={3}
+          spaceBetween={10}
+          autoplay={{
+            delay: 8500, // Change slide every 2.5 seconds
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          }}
+          pagination={{
+            clickable: true,
+            el: ".swiper-pagination-custom",
+          }}
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+          }}
+          modules={[Navigation, Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <TourSectionCard {...slide} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="swiper-pagination-custom"></div>
       </div>
-    </section>
+    </div>
   );
 };
 

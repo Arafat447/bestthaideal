@@ -21,7 +21,7 @@ module.exports = {
 
         primary: "#A0182F",
         secondary: "#292549",
-        brandColor: "#FD0303",
+        brandColor: "#ED1E23",
         brandColor2: "#001A94",
         brandColor2Dark: "#08088F",
 

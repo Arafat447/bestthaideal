@@ -1,31 +1,82 @@
+"use client";
 import React from "react";
-import bgImage from "@/app/asset/image/largeImage/bgImage.webp";
-import ButtonPrimary from "@/components/shared/ButtonPrimary";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/pagination";
+import heroImage1 from "@/app/asset/image/largeImage/ecom1.jpg";
+import heroImage2 from "@/app/asset/image/largeImage/ecom1.webp";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import EcommerceCard from "./Ecommerce/EcommerceCard";
 const Ecommerce = () => {
+  const slides = [
+    {
+      LargeText: "Lipstick ",
+      Subtext: "55",
+      bgImage: heroImage1,
+      urlLink: "/",
+    },
+    {
+      LargeText: "E-commerce",
+      Subtext: "22",
+      bgImage: heroImage2,
+      urlLink: "/",
+    },
+    {
+      LargeText: "Lipstick ",
+      Subtext: "55",
+      bgImage: heroImage1,
+      urlLink: "/",
+    },
+    {
+      LargeText: "E-commerce",
+      Subtext: "22",
+      bgImage: heroImage2,
+      urlLink: "/",
+    },
+  ];
+
   return (
-    <div className="lg:py-5 px-4  lg:px-0  container mx-auto ">
-      <div
-        className="hero min-h-100 w-full bg-cover bg-center rounded-xl"
-        style={{
-          backgroundImage: `url(${bgImage.src})`,
-        }}
-      >
-        <div className="rounded-xl hero-overlay bg-opacity-75 hover:bg-opacity-60 transition duration-500"></div>
-        <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">E-commerce</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <ButtonPrimary
-              sideLink="http://shop.bestthaideal.com/ "
-              text="Explore Now"
-            />
-          </div>
-        </div>
+    <div className="   container mx-auto text-black">
+      <h2 className="text-2xl font-bold text-center lg:text-left">
+        E-commerce (HOT)
+      </h2>
+
+      <div className="z-1  relative py-12 px-2 lg:px-0">
+        <Swiper
+          loop={true}
+          slidesPerView={1}
+          spaceBetween={10}
+          autoplay={{
+            delay: 2500, // Change slide every 2.5 seconds
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          }}
+          pagination={{
+            clickable: true,
+            el: ".swiper-pagination-custom",
+          }}
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+          }}
+          modules={[Navigation, Autoplay]}
+          className="mySwiper"
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <EcommerceCard {...slide} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="swiper-pagination-custom"></div>
       </div>
     </div>
   );

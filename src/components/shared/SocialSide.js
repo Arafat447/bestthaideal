@@ -9,11 +9,11 @@ import { FaLine } from "react-icons/fa6";
 const SocialSide = () => {
   return (
     <div>
-      <div className="icon-bar z-10 rounded-l-lg flex flex-col  gap-3 ">
-        <a href="#" className="bg-black rounded-lg  ">
+      <div className="icon-bar z-10 rounded-l-lg flex flex-col  gap-3 text-2xl   ">
+        <a href="#" className="bg-black rounded-lg  p-2 ">
           <FaLine />
         </a>
-        <a href="#" className="bg-green-600 rounded-lg ">
+        <a href="#" className="bg-green-600 rounded-lg p-2 ">
           <FaWhatsappSquare />
         </a>
       </div>

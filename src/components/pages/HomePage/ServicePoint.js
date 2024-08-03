@@ -5,7 +5,7 @@ const ServicePoint = () => {
         <div className="flex flex-col lg:flex-row gap-2 lg:gap-5   ">
           <div
             data-aos="fade-up"
-            className=" rounded-xl cursor-pointer   bg-primary hover:bg-rose-900 text-white   shadow-xl border-[1px] "
+            className=" rounded-xl cursor-pointer   bg-brandColor hover:bg-rose-900 text-white   shadow-xl border-[1px] "
           >
             <div className="card-body">
               <h2 className=" text-lg lg:text-2xl font-bold text-center">
@@ -18,7 +18,7 @@ const ServicePoint = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="rounded-xl  cursor-pointer   bg-primary hover:bg-rose-900 text-white   shadow-xl border-[1px] "
+            className="rounded-xl  cursor-pointer   bg-brandColor hover:bg-rose-900 text-white   shadow-xl border-[1px] "
           >
             <div className="card-body">
               <h2 className=" text-lg lg:text-2xl font-bold text-center">
@@ -31,7 +31,7 @@ const ServicePoint = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="rounded-xl  cursor-pointer   bg-primary hover:bg-rose-900 text-white   shadow-xl border-[1px] "
+            className="rounded-xl  cursor-pointer   bg-brandColor hover:bg-rose-900 text-white   shadow-xl border-[1px] "
           >
             <div className="card-body">
               <h2 className=" text-lg lg:text-2xl font-bold text-center whitespace-nowrap">

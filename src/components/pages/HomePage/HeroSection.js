@@ -11,7 +11,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 // Import Swiper styles
 
 import heroImage1 from "@/app/asset/image/largeImage/beach.png.webp";
-import heroImage2 from "@/app/asset/image/largeImage/bgImage.webp";
+import heroImage2 from "@/app/asset/image/largeImage/ecom1.webp";
 import heroImage3 from "@/app/asset/image/largeImage/proparty.jpg";
 
 import SliderCard from "./HeroSection/SliderCard";
@@ -44,13 +44,13 @@ const HeroSection = () => {
   ];
   return (
     <div>
-      <div className=" z-1 h-[80vh]">
+      <div className=" z-1 h-[73vh]">
         <Swiper
           loop={true}
           slidesPerView={1}
           spaceBetween={10}
           autoplay={{
-            delay: 2500, // Change slide every 2.5 seconds
+            delay: 8500, // Change slide every 2.5 seconds
             disableOnInteraction: false, // Continue autoplay after user interaction
           }}
           breakpoints={{

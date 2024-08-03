@@ -1,9 +1,7 @@
-/* .active {
-  background: #faf3f300 !important;
+.active {
+  background: #232a38 !important;
   color: white !important;
-
-  border-bottom: 2px solid #fff !important;
-} */
+}
 
 .nav-link,
 .drop-down li {

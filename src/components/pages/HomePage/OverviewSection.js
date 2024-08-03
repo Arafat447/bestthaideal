@@ -13,18 +13,6 @@ const OverviewSection = () => {
       <div className="lg:p-16 pb-6">
         <div className=" gap-12 flex lg:flex-row flex-col  container mx-auto items-center justify-between">
           <div data-aos="zoom-in" className="   lg:w-1/2 w-full">
-            {/* <Player
-              className=" w-[300px] lg:w-[500px] lg:h-[500px] "
-              autoplay
-              loop
-              src={animationData}
-            >
-              <Controls
-                visible={false}
-                buttons={["play", "repeat", "frame", "debug"]}
-              />
-            </Player> */}
-
             <Image
               className="rounded-xl"
               src={sideImage}
@@ -46,10 +34,6 @@ const OverviewSection = () => {
               resources, Bangladeshis have historically traveled worldwide for
               work. Many excel in diverse professions effectively.
             </p>
-
-            <div className="flex gap-2 justify-center lg:justify-end pt-8 pb-6">
-              <ButtonPrimary sideLink="/contact" text="Contact Us" />
-            </div>
           </div>
         </div>
       </div>

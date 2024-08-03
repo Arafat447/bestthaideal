@@ -1,28 +1,57 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logoImage from "@/app/asset/image/logo/logo3.png";
+import logoImage from "@/app/asset/image/logo/logo2.png";
 
 const Footer = () => {
   return (
-    <div className=" bg-gradient-to-t from-blue-900 to-blue-800 text-white">
-      <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="px-4 py-4 bg-white text-black">
+      <div className="  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-1">
             <Link
               href="/"
               aria-label="Go home"
               className="inline-flex items-center"
             >
               <Image width={240} src={logoImage} alt="logo " />
-            </Link>
-            <div className="mt-6 lg:max-w-sm">
-              <p className="text-sm text-gray-800 text-justify">
-                millions working worldwide, from laborers to skilled
-                professionals, capable of meeting both national and
-                international demands.
-              </p>
+            </Link>{" "}
+            <div className="text-sm pt-3">
+              Enjoy the Best Thai service place to fit your needs (local /
+              global).{" "}
             </div>
+          </div>
+
+          <div className="sm:col-span-1">
+            <p className="text-base font-bold tracking-wide text-gray-900">
+              Menu
+            </p>
+            <ul className="mt-2 space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="space-y-2 text-sm">
             <p className="text-base font-bold tracking-wide text-gray-900">
@@ -32,14 +61,6 @@ const Footer = () => {
               <p className="mr-1 text-gray-800">Phone:</p>
               <a
                 href="tel:+8801711542636"
-                aria-label="Our phone"
-                title="Our phone"
-                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                +8801711542636
-              </a>
-              <a
-                href="tel:+66(0)9 69 136 137"
                 aria-label="Our phone"
                 title="Our phone"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
@@ -57,19 +78,11 @@ const Footer = () => {
               >
                 @gmail.com
               </a>
-              <a
-                href="mailto:  @yahoo.com"
-                aria-label="Our email"
-                title="Our email"
-                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                @yahoo.com
-              </a>
             </div>
           </div>
           <div className="space-y-2 text-sm">
             <p className="text-base font-bold tracking-wide text-gray-900">
-              Address:
+              Address
             </p>
 
             <div className="flex">
@@ -90,9 +103,14 @@ const Footer = () => {
             <span className="text-base font-bold tracking-wide text-gray-900">
               Social media flowers
             </span>
+            <div className="border-[1px] border-blue-500 mt-3 h-24 w-full text-sm p-2">
+              Note: this section embed social media flowers
+            </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+        <hr className="w-full border-neutral-300 py-1" />
+
+        <div className="flex flex-col-reverse justify-between pt-5 pb-10  lg:flex-row">
           <p className="text-sm text-gray-600">
             © 2024 || Best thai deal . All rights reserved.
           </p>
