@@ -24,33 +24,24 @@ const Footer = () => {
 
           <div className="sm:col-span-1">
             <p className="text-base font-bold tracking-wide text-gray-900">
-              Menu
+              Social media
             </p>
             <ul className="mt-2 space-y-2 text-sm">
               <li>
-                <Link
-                  href="/about"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  About
+                <Link href="/ " className="text-gray-600 hover:text-gray-900">
+                  Facebook
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  Services
+                <Link href="/ " className="text-gray-600 hover:text-gray-900">
+                  Instagram
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  Contact
+                <Link href="/ " className="text-gray-600 hover:text-gray-900">
+                  Linkedin
                 </Link>
-              </li>
+              </li>{" "}
             </ul>
           </div>
           <div className="space-y-2 text-sm">
@@ -60,7 +51,7 @@ const Footer = () => {
             <div className="flex flex-col">
               <p className="mr-1 text-gray-800">Phone:</p>
               <a
-                href="tel:+8801711542636"
+                href="tel:+660969136137"
                 aria-label="Our phone"
                 title="Our phone"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
@@ -71,12 +62,12 @@ const Footer = () => {
             <div className="flex flex-col">
               <p className=" text-gray-800">Email:</p>
               <a
-                href="mailto:  @gmail.com"
+                href="mailto:info@bestthaideal.com"
                 aria-label="Our email"
                 title="Our email"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                @gmail.com
+                info@bestthaideal.com
               </a>
             </div>
           </div>
@@ -115,7 +106,7 @@ const Footer = () => {
             © 2024 || Best thai deal . All rights reserved.
           </p>
           <p className="text-sm text-gray-600">
-            Design & Develop by{" "}
+            Design and developed by{" "}
             <a
               className="text-warning"
               href="https://zaimahtech.com/"
